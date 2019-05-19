@@ -1,0 +1,140 @@
+.production {
+  background-image: url('../img/pattern-white.jpg');
+  .container {
+    padding-top: 90px;
+  }
+}
+
+.production__header-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: .92;
+  height: 33px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  color: #242d3c;
+
+  @include max(480) {
+    font-size: 30px;
+    line-height: 1.24;
+    text-align: center;
+  }
+}
+
+.production__row {
+  display: flex;
+  margin-bottom: 40px;
+
+  @include max(710) {
+    flex-wrap: wrap;
+  }
+  @include max(480) {
+    margin-bottom: 20px;
+  }
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
+
+    @include max(710) {
+      flex-direction: row;
+    }
+  }
+}
+
+.production__pic {
+  flex: none;
+  width: 400px;
+  min-height: 300px;
+  background-image: url('../img/pattern-light.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include max(810) {
+    width: 350px;
+  }
+  @include max(710) {
+    width: 100%;
+  }
+  img {
+    display: block;
+    width: 85%;
+    max-width: 400px;
+    margin: 50px auto 0;
+  }
+}
+
+.production__info {
+  width: 100%;
+  padding: 30px 40px;
+  background-image: url('../img/pattern-dark.jpg');
+
+  @include max(480) {
+    padding: 30px 20px;
+  }
+}
+
+.production__params {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.production__params--size,
+.production__params--weight {
+  display: flex;
+  width: 50%;
+  margin-bottom: 10px;
+  padding-right: 10px;
+
+  @include max(880) {
+    width: 100%;
+  }
+  svg {
+    flex: none;
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    opacity: .7;
+  }
+
+  span {
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 1;
+    opacity: .7;
+    color: #fff;
+
+    @include max(480) {
+      font-size: 18px;
+    }
+  }
+}
+
+.production__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1;
+  text-transform: uppercase;
+  color: #fff;
+
+  @include max(480) {
+    font-size: 18px;
+  }
+}
+
+.production__text {
+  p {
+    font-size: 14px;
+    line-height: 1.43;
+    margin: 0;
+    letter-spacing: 1;
+    opacity: .7;
+    color: #fff;
+  }
+}
+
+.production-footer {
+  padding: 25px 0 70px 0;
+  text-align: center;
+}

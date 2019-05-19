@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   &::before {
     position: absolute;
     top: 0;
@@ -49,23 +50,26 @@
   line-height: 1.25;
   max-width: 480px;
   margin-bottom: 20px;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: #fff;
 
   @include max(1100) {
     font-size: 40px;
   }
+
   @include max(810) {
     font-size: 34px;
   }
+
   @include max(710) {
     font-size: 40px;
     max-width: 100%;
   }
+
   @include max(425) {
     font-size: 30px;
-    letter-spacing: 2px;
+    letter-spacing: .5px;
   }
 }
 
@@ -75,21 +79,24 @@
   line-height: 1.38;
   max-width: 500px;
   margin-bottom: 40px;
-  letter-spacing: 1.6px;
+  letter-spacing: 1;
   color: #fff;
 
   @include max(1100) {
     font-size: 20px;
   }
+
   @include max(810) {
     font-size: 18px;
   }
+
   @include max(710) {
     font-size: 20px;
     max-width: 580px;
     margin-right: auto;
     margin-left: auto;
   }
+
   @include max(425) {
     font-size: 18px;
   }
@@ -111,13 +118,16 @@
     width: 400px;
     height: 300px;
   }
+
   @include max(810) {
     width: 350px;
     height: 250px;
   }
+
   @include max(710) {
     display: none;
   }
+
   &::before {
     position: absolute;
     top: -95px;
@@ -135,6 +145,7 @@
       width: 320px;
       height: 320px;
     }
+
     @include max(810) {
       top: -40px;
       right: 40px;
