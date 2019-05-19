@@ -36,8 +36,8 @@
 
   @include max(710) {
     font-size: 30px;
-    text-align: center;
     line-height: 1.2;
+    text-align: center;
   }
 }
 
@@ -65,10 +65,12 @@
     font-size: 14px;
     line-height: 1.43;
     max-width: 350px;
-    text-align: center;
-    letter-spacing: 1;
     opacity: .8;
     color: #fff;
+
+    @include max(780) {
+      text-align: center;
+    }
   }
 }
 
