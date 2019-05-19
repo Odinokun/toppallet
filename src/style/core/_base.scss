@@ -133,6 +133,8 @@ svg {
 }
 
 .main {
+  overflow: hidden visible;
+
   flex-grow: 1;
 }
 
@@ -143,6 +145,7 @@ svg {
   margin: 0 auto;
   padding: 12px 10px;
 }
+
 .btn {
   font-family: $font;
   font-size: 18px;
@@ -158,6 +161,7 @@ svg {
   border: none;
   background-color: $highlight;
   box-shadow: none;
+
   @include max(425) {
     font-size: 16px;
     padding: 13px 25px;
