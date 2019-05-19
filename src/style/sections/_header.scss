@@ -7,6 +7,7 @@
 }
 
 .header-logo {
+  display: block;
   margin: 0;
   padding-right: 20px;
   &:hover {
@@ -60,6 +61,7 @@
     font-size: 16px;
     letter-spacing: 0;
   }
+
   @include max(375) {
     font-size: 15px;
   }
@@ -77,9 +79,11 @@
   @include max(480) {
     font-size: 12px;
   }
+
   @include max(375) {
     font-size: 11px;
   }
+
   &:hover {
     color: $highlight;
     border-color: $highlight;
