@@ -127,13 +127,13 @@ svg {
   flex-direction: column;
   height: 100%;
   min-height: 100vh;
+  overflow: hidden auto;
   &.no-scroll {
     overflow: hidden;
   }
 }
 
 .main {
-  overflow: hidden visible;
 
   flex-grow: 1;
 }
