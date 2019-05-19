@@ -1,0 +1,150 @@
+.top-section {
+  position: relative;
+  background-color: $brand;
+  background-image: url('../img/bg-top-section.jpg');
+  background-repeat: repeat-x;
+  background-size: contain;
+
+  @include max(830) {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: '';
+    background-color: rgba(0, 0, 0, .65);
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 107px;
+    padding-bottom: 107px;
+
+    @include max(425) {
+      padding-top: 70px;
+      padding-bottom: 60px;
+    }
+  }
+}
+
+.top-section__left {
+  padding-right: 10px;
+
+  @include max(710) {
+    text-align: center;
+  }
+}
+
+.top-section__title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.25;
+  max-width: 480px;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #fff;
+
+  @include max(1100) {
+    font-size: 40px;
+  }
+  @include max(810) {
+    font-size: 34px;
+  }
+  @include max(710) {
+    font-size: 40px;
+    max-width: 100%;
+  }
+  @include max(425) {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+}
+
+.top-section__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.38;
+  max-width: 500px;
+  margin-bottom: 40px;
+  letter-spacing: 1.6px;
+  color: #fff;
+
+  @include max(1100) {
+    font-size: 20px;
+  }
+  @include max(810) {
+    font-size: 18px;
+  }
+  @include max(710) {
+    font-size: 20px;
+    max-width: 580px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @include max(425) {
+    font-size: 18px;
+  }
+}
+
+.top-section__right-pallet {
+  position: absolute;
+  top: 105px;
+  right: -65px;
+  bottom: 0;
+  width: 544px;
+  height: 370px;
+  margin: auto;
+
+  @include max(1100) {
+    position: relative;
+    top: 40px;
+    right: 0;
+    width: 400px;
+    height: 300px;
+  }
+  @include max(810) {
+    width: 350px;
+    height: 250px;
+  }
+  @include max(710) {
+    display: none;
+  }
+  &::before {
+    position: absolute;
+    top: -95px;
+    right: 30px;
+    width: 458px;
+    height: 458px;
+    content: '';
+    border-radius: 50%;
+    background-color: #f3eddf;
+    background-image: url('../img/pattern-white.jpg');
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, .5);
+
+    @include max(1100) {
+      top: -60px;
+      width: 320px;
+      height: 320px;
+    }
+    @include max(810) {
+      top: -40px;
+      right: 40px;
+      width: 260px;
+      height: 260px;
+    }
+  }
+  img {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+}

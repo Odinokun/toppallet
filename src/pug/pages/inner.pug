@@ -21,6 +21,12 @@ block content
     //begin content
     section.main
       .container
+        a(href="#").btn Оформить заявку
+        button.btn Оформить заявку
+        input(type='submit' value='Оформить заявку').btn
+
+
+      .container
         .test-mixins(style="display:flex; justify-content: space-between; margin-bottom: 50px;")
           +test__item('social', 'hello world 1')
           +test__item('social', 'hello world 2')
