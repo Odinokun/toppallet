@@ -1,4 +1,12 @@
 // begin header
-header.header(style='background-color:#167;color:#fff;text-align:center;text-transform:uppercase;')
-  h1 header
+header.header
+  .container
+    h1.header-logo
+      a(href="#").header-logo__link
+        +svg('logo')
+    .header-contacts
+      a(href="tel:+380660084443").header-contacts__phone-link
+        +svg('phone')
+        span.header-contacts__phone-text +38 (066) 008-44-43
+      span.header-contacts__callback Заказать обратный звонок
 // end header

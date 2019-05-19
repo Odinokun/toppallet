@@ -1,0 +1,87 @@
+.header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header-logo {
+  margin: 0;
+  padding-right: 20px;
+  &:hover {
+    svg {
+      fill: $highlight;
+    }
+  }
+  svg {
+    fill: #242d3c;
+    width: 100%;
+    max-width: 260px;
+    height: 53px;
+    transition: fill .5s;
+  }
+}
+
+.header-contacts {
+  flex: none;
+  text-align: right;
+}
+
+.header-contacts__phone-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  &:hover {
+    .header-contacts__phone-text {
+      color: $highlight;
+    }
+  }
+  svg {
+    fill: $highlight;
+    width: 21px;
+    height: 20px;
+    margin-right: 5px;
+
+    @include max(375) {
+      display: none;
+    }
+  }
+}
+
+.header-contacts__phone-text {
+  font-size: 18px;
+  font-weight: 700;
+  transition: color .5s;
+  letter-spacing: .55px;
+  color: $dark;
+
+  @include max(480) {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  @include max(375) {
+    font-size: 15px;
+  }
+}
+
+.header-contacts__callback {
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  padding-top: 5px;
+  transition: .5s;
+  color: $text;
+  border-bottom: dotted 1px #979797;
+
+  @include max(480) {
+    font-size: 12px;
+  }
+  @include max(375) {
+    font-size: 11px;
+  }
+  &:hover {
+    color: $highlight;
+    border-color: $highlight;
+  }
+}
