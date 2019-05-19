@@ -124,17 +124,16 @@ svg {
 
 .main-wrap {
   display: flex;
+  overflow: hidden auto;
   flex-direction: column;
   height: 100%;
   min-height: 100vh;
-  overflow: hidden auto;
   &.no-scroll {
     overflow: hidden;
   }
 }
 
 .main {
-
   flex-grow: 1;
 }
 
@@ -153,6 +152,7 @@ svg {
   line-height: 1;
   display: inline-block;
   padding: 17px 35px;
+  cursor: pointer;
   transition: background-color .5s;
   text-decoration: none;
   letter-spacing: .45px;
@@ -166,6 +166,7 @@ svg {
     font-size: 16px;
     padding: 13px 25px;
   }
+
   &:hover {
     color: #000;
     background-color: $highlight-hov;

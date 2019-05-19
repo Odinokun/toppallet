@@ -1,4 +1,45 @@
 //begin footer
-footer.footer(style='background-color:#167;color:#fff;text-align:center;text-transform:uppercase;')
-  h1 footer
+footer.footer
+  .container
+    .footer-left
+      .footer-left__item
+        h2.footer-left__title Оставьте заявку
+        p Оправьте запрос на расчет стоимости интересуещий вас вида поддона.
+        p Ответим на любые вопросы, касаемо нашей продукции или дадим квалифицированную консультацию по производству тары под заказ.
+
+      .footer-left__item
+        h3.footer-left__overtitle или свяжитесь с нами
+        h2.footer-left__title Контакты
+
+        .footer-left__contacts
+          a(href="tel:+380660084443").footer-left__contacts-row
+            +svg('phone')
+            span
+              |+38 (066) 008-44-43 
+              br
+              |(viber, watsapp, telegram)
+
+          a(href="mailto:avpallet@gmail.com").footer-left__contacts-row
+            +svg('email')
+            span avpallet@gmail.com
+
+          a(href="https://goo.gl/maps/U9PTjGpurXy93MBN9" target="_blank" rel="nofollow noopener noreferrer").footer-left__contacts-row
+            +svg('marker')
+            span
+              |Киевская область, 
+              br
+              |ПГТ Барышевка
+
+
+
+    .footer-right
+      form.footer__form
+        input.footer__input(name='name' placeholder='Ваше имя *' required)
+        input.footer__input(name='phone' placeholder='Ваш телефон *' required)
+        input.footer__input(name='mail' placeholder='Электронная почта')
+        textarea.footer__textarea(name='message' placeholder='Сообщение')
+        button.btn Отправить заявку
+
+    .footer-bottom
+      span &#169; Toppallet Inc. 2019
 //end footer
