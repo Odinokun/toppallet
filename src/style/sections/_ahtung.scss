@@ -4,6 +4,7 @@
     display: flex;
     padding-top: 55px;
     padding-bottom: 25px;
+
     @include max(830) {
       justify-content: center;
       flex-wrap: wrap;
@@ -16,7 +17,8 @@
   flex: none;
   width: 100%;
   max-width: 440px;
-  padding: 0 55px;
+  padding: 0 55px 2px 55px;
+
   @include max(480) {
     padding: 0;
   }
@@ -26,9 +28,10 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 1.19;
-  letter-spacing: 2px;
+  letter-spacing: 1;
   text-transform: uppercase;
   color: $text;
+
   @include max(480) {
     font-size: 30px;
   }
@@ -36,4 +39,8 @@
 
 .ahtung__right {
   padding-left: 10px;
+  p {
+    font-size: 14px;
+    line-height: 1.43;
+  }
 }
