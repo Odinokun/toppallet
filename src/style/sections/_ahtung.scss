@@ -1,0 +1,39 @@
+.ahtung {
+  background-color: $highlight;
+  .container {
+    display: flex;
+    padding-top: 55px;
+    padding-bottom: 25px;
+    @include max(830) {
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  }
+}
+
+.ahtung__left {
+  flex: none;
+  width: 100%;
+  max-width: 440px;
+  padding: 0 55px;
+  @include max(480) {
+    padding: 0;
+  }
+}
+
+.ahtung__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $text;
+  @include max(480) {
+    font-size: 30px;
+  }
+}
+
+.ahtung__right {
+  padding-left: 10px;
+}
