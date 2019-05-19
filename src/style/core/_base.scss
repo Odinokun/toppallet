@@ -143,3 +143,27 @@ svg {
   margin: 0 auto;
   padding: 12px 10px;
 }
+.btn {
+  font-family: $font;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-block;
+  padding: 17px 35px;
+  transition: background-color .5s;
+  text-decoration: none;
+  letter-spacing: .45px;
+  text-transform: uppercase;
+  color: #000;
+  border: none;
+  background-color: $highlight;
+  box-shadow: none;
+  @include max(425) {
+    font-size: 16px;
+    padding: 13px 25px;
+  }
+  &:hover {
+    color: #000;
+    background-color: $highlight-hov;
+  }
+}
