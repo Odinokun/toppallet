@@ -1,21 +1,25 @@
 module.exports = function() {
 
-  // begin popup open
-  $('.popup-open').on('click', function() {
-    $('.popup, .popup__layer').fadeIn();
+  // begin callback-popup open
+  $('.btn-popup--sm').on('click', function(e) {
+    e.preventDefault();
+    $('.popup--callback, .popup__layer').fadeIn();
   });
-  // end popup open
+  // end callback-popup open
+
+  // begin order-popup open
+  $('.btn-popup--lg').on('click', function(e) {
+    e.preventDefault();
+    $('.popup--order, .popup__layer').fadeIn();
+  });
+  // end order-popup open
 
   // begin popup close
-  $('.popup__layer').on('click', function() {
-    $('.popup, .popup__layer').fadeOut();
+  $('.popup__layer, .popup-close').on('click', function() {
+    $('.popup__layer,' +
+      '.popup--callback,' +
+      '.popup--order').fadeOut();
   });
   // end popup close
-
-  // begin popup scroll
-  // $(window).on('scroll', function() {
-  //   $('.popup').css({'top': $(window).scrollTop() + 50});
-  // }).scroll();
-  // end popup scroll
 
 };

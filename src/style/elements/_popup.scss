@@ -5,21 +5,139 @@
   right: 0;
   bottom: 0;
   left: 0;
+  opacity: .95;
   display: none;
-  background-color: rgba(0, 0, 0, .8);
+  background-image: url('../img/pattern-dark.jpg');
 }
+
 .popup {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top: 50%;
   left: 50%;
   display: none;
-  width: 300px;
-  padding: 50px 30px;
+  width: 100%;
+  max-width: 464px;
   transform: translate(-50%, -50%);
-  background-color: #369;
+  @include max(630) {
+    max-width:calc(100% - 120px);
+  }
+  @include max(425) {
+    max-width:calc(100% - 80px);
+
+  }
+  .btn {
+    display: block;
+    margin: 35px auto 0;
+    @include max(375) {
+      font-size: 14px;
+    }
+  }
 }
+
+.popup--callback {
+  //display: block;
+}
+.popup--order {
+  //display: block;
+}
+.popup--success {
+  //display: block;
+}
+
+.popup__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: .92;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  @include max(560) {
+    font-size: 30px;
+    line-height: 1.1;
+  }
+  @include max(425) {
+    font-size: 26px;
+  }
+}
+
+.popup__subtitle {
+  font-size: 20px;
+  line-height: 1;
+  display: block;
+  margin-bottom: 28px;
+  text-align: center;
+  opacity: .7;
+  color: #fff;
+  @include max(560) {
+    font-size: 18px;
+  }
+  @include max(425) {
+    font-size: 16px;
+  }
+}
+
 .popup__form {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: -35px;
+  right: -70px;
+  cursor: pointer;
+  @include max(630) {
+    right: -45px;
+  }
+  @include max(425) {
+    top: -25px;
+    right: -30px;
+  }
+
+  &:hover {
+    svg {
+      fill: $highlight-hov;
+      transform: rotate(180deg);
+    }
+  }
+  svg {
+    fill: #fff;
+    width: 35px;
+    height: 35px;
+    transition: .3s;
+    @include max(425) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+.popup__input,
+.popup__textarea {
+  font-size: 18px;
+  line-height: 1;
+  width: 100%;
+  padding: 17px 24px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: $text;
+  border: none;
+  background-color: #f3eddf;
+  box-shadow: none;
+  @include max(630) {
+    padding: 12px 17px;
+    font-size: 14px;
+  }
+}
+
+.popup__input {
+  margin-bottom: 16px;
+}
+
+.popup__textarea {
+  height: 100px;
 }
