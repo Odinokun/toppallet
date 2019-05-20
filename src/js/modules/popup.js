@@ -15,10 +15,11 @@ module.exports = function() {
   // end order-popup open
 
   // begin popup close
-  $('.popup__layer, .popup-close').on('click', function() {
+  $('.popup__layer, .popup-close, .popup__btn-success').on('click', function() {
     $('.popup__layer,' +
       '.popup--callback,' +
-      '.popup--order').fadeOut();
+      '.popup--order,' +
+      '.popup--success').fadeOut();
   });
   // end popup close
 

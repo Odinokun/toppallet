@@ -4,27 +4,27 @@
 .popup.popup--callback
   h3.popup__title Заказать звонок
   span.popup__subtitle Мы свяжемся с Вами в ближайшее время
-  form.popup__form
+  form.popup__form#callback__form
     .popup-close
       +svg('close')
     input.popup__input(name="name" placeholder="Ваше имя")
     input.popup__input(name="phone" placeholder="Ваш телефон")
-    button.btn.popup__btn Отправить
+    input(type='submit' value='Отправить').btn.popup__btn
 
 .popup.popup--order
   h3.popup__title Оставить заявку
   span.popup__subtitle Мы свяжемся с Вами в ближайшее время
-  form.popup__form
+  form.popup__form#order__form
     .popup-close
       +svg('close')
     input.popup__input(name='name' placeholder='Ваше имя *' required)
     input.popup__input(name='phone' placeholder='Ваш телефон *' required)
     input.popup__input(name='mail' placeholder='Электронная почта')
     textarea.popup__textarea(name='message' placeholder='Сообщение')
-    button.btn.popup__btn Отправить заявку
+    input(type='submit' value='Отправить заявку').btn.popup__btn
 
 .popup.popup--success
   h3.popup__title Спасибо
   span.popup__subtitle Мы свяжемся с Вами в ближайшее время
-  button.btn.popup__btn Вернуться на сайт
+  button.btn.popup__btn.popup__btn-success Вернуться на сайт
 //end popup
