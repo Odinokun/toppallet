@@ -5,4 +5,7 @@ $(function() {
 
   // begin Popup
   require('./modules/popup')();
+
+  // begin send form
+  require('./modules/sendForm')();
 });

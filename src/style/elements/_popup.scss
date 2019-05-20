@@ -5,8 +5,8 @@
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: .95;
   display: none;
+  opacity: .95;
   background-image: url('../img/pattern-dark.jpg');
 }
 
@@ -19,30 +19,22 @@
   width: 100%;
   max-width: 464px;
   transform: translate(-50%, -50%);
-  @include max(630) {
-    max-width:calc(100% - 120px);
-  }
-  @include max(425) {
-    max-width:calc(100% - 80px);
 
+  @include max(630) {
+    max-width: calc(100% - 120px);
+  }
+
+  @include max(425) {
+    max-width: calc(100% - 80px);
   }
   .btn {
     display: block;
     margin: 35px auto 0;
+
     @include max(375) {
       font-size: 14px;
     }
   }
-}
-
-.popup--callback {
-  //display: block;
-}
-.popup--order {
-  //display: block;
-}
-.popup--success {
-  //display: block;
 }
 
 .popup__title {
@@ -53,10 +45,12 @@
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+
   @include max(560) {
     font-size: 30px;
     line-height: 1.1;
   }
+
   @include max(425) {
     font-size: 26px;
   }
@@ -70,9 +64,11 @@
   text-align: center;
   opacity: .7;
   color: #fff;
+
   @include max(560) {
     font-size: 18px;
   }
+
   @include max(425) {
     font-size: 16px;
   }
@@ -90,14 +86,15 @@
   top: -35px;
   right: -70px;
   cursor: pointer;
+
   @include max(630) {
     right: -45px;
   }
+
   @include max(425) {
     top: -25px;
     right: -30px;
   }
-
   &:hover {
     svg {
       fill: $highlight-hov;
@@ -109,6 +106,7 @@
     width: 35px;
     height: 35px;
     transition: .3s;
+
     @include max(425) {
       width: 25px;
       height: 25px;
@@ -128,9 +126,10 @@
   border: none;
   background-color: #f3eddf;
   box-shadow: none;
+
   @include max(630) {
-    padding: 12px 17px;
     font-size: 14px;
+    padding: 12px 17px;
   }
 }
 
